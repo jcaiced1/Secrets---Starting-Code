@@ -1,5 +1,5 @@
 //jshint esversion:6
-require('dotenv').config()                        //Level 2 environment variable envia a .env
+require('dotenv').config();                        //Level 2 environment variable envia a .env
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -7,8 +7,6 @@ const mongoose = require("mongoose");
 const encrypt = require("mongoose-encryption");    // Level 2
 
 const app = express();
-
-console.log(process.env.API_KEY)
 
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
