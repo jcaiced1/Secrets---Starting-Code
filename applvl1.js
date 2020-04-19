@@ -19,7 +19,7 @@ const userSchema = {                                // Level 1
   password: String
 };
 
-const User = new mongoose.model("User", userSchema)  // Level 1
+const User = new mongoose.model("User", userSchema);  // Level 1
 
 app.get("/", function(req, res){
   res.render("home");
